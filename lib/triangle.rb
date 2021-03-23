@@ -29,8 +29,11 @@ class Triangle
   end
 
   class TriangleError < StandardError
+    def message
+      "Illegal triangle!"
+    end
   end
 
-#   new = Triangle.new(10, 20, 30)
+#   new = Triangle.new(50, 20, 10)
 # binding.pry
 end
